@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.examples.multimuduleapp.feature.splash.databinding.FragmentSplashBinding
+import navigate
 
 class SplashFragment : Fragment(R.layout.fragment_splash) {
 
@@ -18,5 +19,9 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.btnMain.setOnClickListener {
+            navigate(R.id.action_splashFragment_to_mainFragment)
+        }
     }
 }
