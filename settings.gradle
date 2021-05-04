@@ -1,0 +1,3 @@
+include ':feature-splash'
+include ':app'
+rootProject.name = "MultiMuduleApp"
