@@ -9,10 +9,14 @@
         android:id="@+id/splashFragment"
         android:name="com.examples.multimuduleapp.feature.splash.SplashFragment"
         android:label="SplashFragment"
-        tools:layout="@layout/fragment_splash" >
+        tools:layout="@layout/fragment_splash">
         <action
             android:id="@id/action_splashFragment_to_mainFragment"
             app:destination="@id/mainFragment"
+            app:popUpTo="@navigation/navigation_global" />
+        <action
+            android:id="@id/action_splashFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment"
             app:popUpTo="@navigation/navigation_global" />
     </fragment>
 
@@ -20,5 +24,15 @@
         android:id="@+id/mainFragment"
         android:name="com.examples.multimuduleapp.feature.main.MainFragment"
         android:label="MainFragment"
-        tools:layout="@layout/fragment_main"/>
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@id/action_mainFragment_to_splashFragment"
+            app:destination="@id/splashFragment"
+            app:popUpTo="@id/navigation_global" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.examples.multimuduleapp.feature.onboarding.OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding" />
 </navigation>

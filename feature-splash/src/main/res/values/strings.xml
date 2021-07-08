@@ -1,4 +1,5 @@
 <resources>
     <string name="splash_title">SPLASH</string>
     <string name="splash_to_main">to Main</string>
+    <string name="splash_to_onboarding">to Onboarding</string>
 </resources>

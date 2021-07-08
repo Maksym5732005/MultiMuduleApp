@@ -23,5 +23,9 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
         binding.btnMain.setOnClickListener {
             navigate(R.id.action_splashFragment_to_mainFragment)
         }
+
+        binding.btnOnboarding.setOnClickListener {
+            navigate(R.id.action_splashFragment_to_onboardingFragment)
+        }
     }
 }

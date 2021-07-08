@@ -1,5 +1,9 @@
 apply from: rootProject.file('gradle/android-library.gradle')
 
 dependencies {
-
+    implementation(
+            project(':feature-profile'),
+            project(':feature-settings'),
+            project(':feature-info'),
+    )
 }
